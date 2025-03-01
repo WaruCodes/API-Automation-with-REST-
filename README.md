@@ -4,19 +4,38 @@ Overview
 
 This project demonstrates automated API testing using Java and REST Assured. It covers the full life cycle of a resource by performing the following operations on a product:
 
+1. Validating API Responses
 
+        API responses consist of three key components:
+        
+        Status Code – Verifies the request result (e.g., 200 OK, 404 Not Found)
+        
+        Headers – Contains metadata (cookies, connection details, etc.)
+        
+        Body – Holds the actual data returned from the API
 
-Prerequisites:
+2. HTTP Methods Used
 
-Ensure you have the following installed:
+        POST – Create a new product
+        
+        PUT – Update the existing product
+        
+        GET – Retrieve product details
+        
+        DELETE – Remove the product
 
-Java (JDK 8 or higher)
+3. Response Validation Techniques
 
-Maven
+        Status Code Verification – Ensures correct HTTP response status
+        
+        Response Body Verification – Checks for expected fields and values
+        
+        Header Validation – Confirms metadata consistency
 
-An API testing environment (e.g., local API server or publicly available API)
+4. Complex Response Handling – Validates arrays, nested objects, and data structures
 
-IDE (e.g., IntelliJ IDEA, Eclipse)
+5. Running the Tests
+
 
 
 
